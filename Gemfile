@@ -55,3 +55,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # custom plugins
 gem 'slim-rails'
+
+# FontAwesome
+gem 'font-awesome-sass'
+
+# Bootstrap
+gem 'bootstrap-sass', '~> 3.3.6'

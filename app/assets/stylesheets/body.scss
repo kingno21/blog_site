@@ -5,4 +5,20 @@ body{
 .contents{
   margin-top: 60px;
   min-height: 900px;
+  padding: 3vw;
+}
+
+.shadow{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.5;
+  background-color: #888888;
+  visibility: hidden;
+  z-index: 1000;
+  &.active{
+    visibility: visible;
+  }
 }

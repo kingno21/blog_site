@@ -1,0 +1,42 @@
+.sidebar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  left: -400px;
+  z-index: 1001;
+  transition: all .2s ease-out 0s;
+  background-color: #FAFAFA;
+
+  .head{
+    height: 90px;
+    background-color: #C9EFF9;
+  }
+  .menu{
+    height: 60px;
+    background-color: #07A4B5;
+    text-align: center;
+    width: 80%;
+    color: #F9FCFD;
+    margin: 1px 0 0 auto;
+    font-size: 4vw;
+    display: table;
+    text-decoration: none;
+
+    p{
+      margin: 0;
+      height: 100%;
+      width: 100%;
+      display: table-cell;
+      vertical-align: middle;
+      font-size: 20px;
+      color: #F9FCFD;
+      font-weight: 900;
+    }
+  }
+}
+
+.sidebar.active{
+  left: -0px;
+}

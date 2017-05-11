@@ -1,8 +1,21 @@
 
 footer {
-  height: 80px;
+  height: 40px;
   width: 100%;
-  background-color: #fff;
+  background-color: #3C3C3C;
+  opacity: .5;
+
+  .power{
+    float: right;
+    padding-right: 15px;
+    height: 100%;
+    display: table;
+    p {
+      color: #fff;
+      display: table-cell;
+      vertical-align: bottom;
+    }
+  }
 }
 
 h1 {
