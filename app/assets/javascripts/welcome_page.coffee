@@ -5,7 +5,7 @@
 header_height = 60;
 foot_height = 40;
 
-$(document).on 'click touch', 'div.shadow, header > div.left', (ele) ->
+$(document).on 'click touchstart', 'div.shadow, header > div.left', (ele) ->
   ele.preventDefault()
   $('.sidebar').toggleClass('active')
   $('.shadow').toggleClass('active')
