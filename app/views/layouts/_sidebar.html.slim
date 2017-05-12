@@ -1,6 +1,20 @@
 div.sidebar
   div.head
-  a.menu
+  a.menu href='/'
     p Home
   a.menu
     p About
+  /a.menu
+  /  p.notice
+  /    = notice
+  /a.menu
+  /  p.alert
+  /    = alert
+  - if user_signed_in?
+    = link_to  destroy_user_session_path, method: :delete, class: 'menu' do
+      p Log Out
+  - else
+    a.menu href='/users/sign_in'
+      p Sign In
+    a.menu href='/users/sign_up'
+      p Log In

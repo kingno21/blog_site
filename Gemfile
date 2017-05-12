@@ -61,3 +61,6 @@ gem 'font-awesome-sass'
 
 # Bootstrap
 gem 'bootstrap-sass', '~> 3.3.6'
+
+# user auth
+gem 'devise'
