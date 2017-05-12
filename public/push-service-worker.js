@@ -1,0 +1,1 @@
+console.log('Nothing is here, and i dont know why rails want it');

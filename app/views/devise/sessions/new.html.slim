@@ -1,0 +1,12 @@
+div.devise.form
+  = simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+    = f.input :email, as: :email, autofocus: true
+    = f.input :password, as: :password
+
+    - if devise_mapping.rememberable?
+      = f.input :remember_me, as: :boolean
+
+    div.form-group.bottom
+      = render "devise/shared/links"
+
+      = f.submit "Log in"

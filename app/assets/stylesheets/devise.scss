@@ -1,0 +1,34 @@
+.devise.form{
+  width: 70%;
+  margin: 4vw auto;
+  padding: 9vw;
+  border: 1px solid;
+  border-radius: 4vw;
+
+  .bottom{
+    text-align: center;
+
+    br{
+      content: '';
+      display: table;
+      margin: 0.5vw 0;
+    }
+
+    a{
+      text-decoration: none;
+      color: #415F9D;
+
+      &:hover{
+        color: #233B6E;
+      }
+    }
+
+    input[type=submit]{
+      border: none;
+      padding: 1vw 3vw;
+      background-color: #233B6E;
+      color: #fff;
+      border-radius: 1vw;
+    }
+  }
+}

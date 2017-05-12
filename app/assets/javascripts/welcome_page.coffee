@@ -2,7 +2,12 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
+header_height = 60;
+foot_height = 40;
 
-$(document).on 'click', 'div.shadow, div.left', () ->
+$(document).on 'click', 'div.shadow, header > div.left', () ->
   $('.sidebar').toggleClass('active')
   $('.shadow').toggleClass('active')
+
+@init = () ->
+  $('.contents').css('min-height': $(window).height() - foot_height - header_height)
