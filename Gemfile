@@ -84,3 +84,7 @@ gem 'rake', '~> 12.0'
 
 # annotate
 gem 'annotate'
+
+# React
+gem 'react-rails'
+gem 'webpacker'
