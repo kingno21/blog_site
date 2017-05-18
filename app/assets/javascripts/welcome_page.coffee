@@ -12,3 +12,8 @@ $(document).on 'click touchstart', 'div.shadow, header > div.left', (ele) ->
 
 @init = () ->
   $('.contents').css('min-height': $(window).height() - foot_height - header_height)
+
+
+@run = (ele) ->
+
+  console.log(ele.currentTarget)
